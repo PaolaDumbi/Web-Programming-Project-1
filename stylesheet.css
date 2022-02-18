@@ -1,0 +1,43 @@
+body{
+	background-image: url(greybackground.jpeg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+h1{
+	font-size: 100px;
+	text-align: center;
+}
+.board{
+	position: absolute;
+	left: 50%;
+	top: 60%;
+	transform: translate(-50%,-50%);
+	animation-name: animation1;
+  	animation-duration: 3s;
+  	cursor: pointer;
+}
+
+.box{
+	background-color: white;
+	width: 150px;
+	height: 150px;
+	border: 1px solid black;
+	display: inline-block;
+	margin: -2px;
+	font-size: 75px;
+	text-align: center;
+}
+
+.black{
+	background-color: black;
+	color: white;
+}
+.a:hover{
+	background-color: lightsalmon;
+}
+
+@keyframes animation1 {
+  from {left:0px;top:1000px;}
+  to {left: 1600px; top:1000px;}
+}
+
